@@ -2,71 +2,28 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    min-height: 100vh;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
 }
 
 aside {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    background-color: #fff;
+    flex: 0 0 300px;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-right: 20px;
-    text-align: center;
-    position: sticky;
-    top: 80px;
-    align-self: flex-start;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .profile-card {
-    animation: fadeIn 1s ease-in-out;
+    text-align: center;
 }
 
 .profile-photo {
@@ -103,54 +60,53 @@ aside {
 }
 
 main {
-    flex: 3;
-    background-color: #fff;
+    flex: 1;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 section {
-    margin-bottom: 2em;
-    animation: fadeInUp 1s ease-in-out;
+    margin-bottom: 50px;
 }
 
 section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
-}
-
-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-section ul li {
-    margin-bottom: 1em;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill {
-    background-color: #0073e6;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin: 5px;
-    transition: background-color 0.3s ease;
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
 }
 
-.skill:hover {
-    background-color: #005bb5;
+section p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
-    box-shadow: 
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
