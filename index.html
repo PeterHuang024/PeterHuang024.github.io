@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -20,80 +21,96 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <h3>Job Title at Company</h3>
-                    <p>Jan 2020 - Present</p>
-                    <p>Description of your role and achievements at the company.</p>
-                </li>
-                <li>
-                    <h3>Previous Job Title at Another Company</h3>
-                    <p>Jan 2018 - Dec 2019</p>
-                    <p>Description of your role and achievements at the company.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Degree at University</h3>
-                    <p>2014 - 2018</p>
-                    <p>Description of your studies and achievements.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
-            </ul>
-        </section>
-        <section id="articles">
-            <h2>Articles</h2>
-            <ul>
-                <li>
-                    <a href="link-to-article-1">Title of Article 1</a>
-                    <p>Short description of the article.</p>
-                </li>
-                <li>
-                    <a href="link-to-article-2">Title of Article 2</a>
-                    <p>Short description of the article.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>GitHub Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/yourusername/repo1">Project Title 1</a>
-                    <p>Short description of the project.</p>
-                </li>
-                <li>
-                    <a href="https://github.com/yourusername/repo2">Project Title 2</a>
-                    <p>Short description of the project.</p>
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/YOUREMAIL" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+    <div class="container">
+        <aside>
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="basic-info">
+                <h2>Your Name</h2>
+                <p>Web Developer</p>
+                <p>Location: City, Country</p>
+                <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <h3>Job Title at Company</h3>
+                        <p>Jan 2020 - Present</p>
+                        <p>Description of your role and achievements at the company.</p>
+                    </li>
+                    <li>
+                        <h3>Previous Job Title at Another Company</h3>
+                        <p>Jan 2018 - Dec 2019</p>
+                        <p>Description of your role and achievements at the company.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Degree at University</h3>
+                        <p>2014 - 2018</p>
+                        <p>Description of your studies and achievements.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                    <li>Skill 4</li>
+                </ul>
+            </section>
+            <section id="articles">
+                <h2>Articles</h2>
+                <ul>
+                    <li>
+                        <a href="link-to-article-1">Title of Article 1</a>
+                        <p>Short description of the article.</p>
+                    </li>
+                    <li>
+                        <a href="link-to-article-2">Title of Article 2</a>
+                        <p>Short description of the article.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>GitHub Projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/yourusername/repo1">Project Title 1</a>
+                        <p>Short description of the project.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/yourusername/repo2">Project Title 2</a>
+                        <p>Short description of the project.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/YOUREMAIL" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 My Personal Website</p>
     </footer>
