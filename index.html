@@ -6,6 +6,7 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,16 +24,18 @@
     </header>
     <div class="container">
         <aside>
-            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
-            <div class="basic-info">
-                <h2>Your Name</h2>
-                <p>Web Developer</p>
-                <p>Location: City, Country</p>
-                <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-                <p>Phone: +123 456 7890</p>
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+                <div class="basic-info">
+                    <h2>Your Name</h2>
+                    <p>Web Developer</p>
+                    <p>Location: City, Country</p>
+                    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </aside>
@@ -64,11 +67,11 @@
             </section>
             <section id="skills">
                 <h2>Skills</h2>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                    <li>Skill 4</li>
+                <ul class="skills-list">
+                    <li><span class="skill">Skill 1</span></li>
+                    <li><span class="skill">Skill 2</span></li>
+                    <li><span class="skill">Skill 3</span></li>
+                    <li><span class="skill">Skill 4</span></li>
                 </ul>
             </section>
             <section id="articles">
@@ -114,5 +117,6 @@
     <footer>
         <p>&copy; 2024 My Personal Website</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
