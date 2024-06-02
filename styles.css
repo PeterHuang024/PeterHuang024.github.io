@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -12,6 +14,10 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -21,34 +27,46 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
 aside {
-    width: 250px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-right: 20px;
     text-align: center;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+}
+
+.profile-card {
+    animation: fadeIn 1s ease-in-out;
 }
 
 .profile-photo {
@@ -77,10 +95,15 @@ aside {
     margin: 0 10px;
     font-size: 1.5em;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0073e6;
 }
 
 main {
-    flex: 1;
+    flex: 3;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -89,6 +112,7 @@ main {
 
 section {
     margin-bottom: 2em;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 section h2 {
@@ -106,38 +130,27 @@ section ul li {
     margin-bottom: 1em;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #005bb5;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 0.5em;
-}
-
-form input, form textarea {
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 0.5em;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
+    box-shadow: 
