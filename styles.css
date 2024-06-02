@@ -4,14 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     min-height: 100vh;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
-    background-size: cover;
 }
 
 aside {
@@ -67,20 +64,19 @@ main {
 
 section {
     margin-bottom: 50px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 section h2 {
-    color: #fff;
-    background-color: #333;
+    color: #333;
     padding: 10px 20px;
     margin: 0;
-    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #ccc;
 }
 
 section p {
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 0 0 5px 5px;
 }
 
 footer {
@@ -88,25 +84,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
 }
